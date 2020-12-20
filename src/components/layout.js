@@ -1,14 +1,19 @@
 import React from "react"
-import Header from './header';
-import Footer from './footer';
+import Header from "./header"
+import Footer from "./footer"
+import "../styles/index.scss"
+import layoutStyles from "./layout.module.scss"
+
 const Layout = props => {
-    return(
-        <React.Fragment>
-    <Header />
-  <div>{props.children}</div>
-    <Footer />
-    </React.Fragment>
-    )
+  return (
+    <div className={layoutStyles.container}>
+      <div className={layoutStyles.content}>
+        <Header />
+        <div>{props.children}</div>
+      </div>
+      <Footer />
+    </div>
+  )
 }
 
 export default Layout
