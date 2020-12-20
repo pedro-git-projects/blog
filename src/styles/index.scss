@@ -622,3 +622,13 @@ html {
       font-size: 100%;
     }
   }
+
+  ::-moz-selection { /* Code for Firefox */
+    color: black;
+    background: #a796ec;
+  }
+  
+  ::selection {
+    color: black;
+    background: #a796ec;
+  }
