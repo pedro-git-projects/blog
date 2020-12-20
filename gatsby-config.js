@@ -5,7 +5,11 @@
  */
 
 module.exports = {
-  /* Your site config here */
+  siteMetadata:{
+    title: 'Pedro Martins Software Engineering',
+    author: 'Pedro Martins'
+  },
+
   plugins: [
     'gatsby-plugin-sass'
   ],
