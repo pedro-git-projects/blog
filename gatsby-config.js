@@ -5,6 +5,13 @@ module.exports = {
   },
 
   plugins: [
+    {
+      resolve: `gatsby-source-contentful`,
+      options: {
+        spaceId: `qy55yjmq614l`,
+        accessToken: process.env.CONTENTFUL_ACCESS_TOKEN,
+      },
+    },  
     'gatsby-plugin-sass',
     {
       resolve: 'gatsby-source-filesystem',
