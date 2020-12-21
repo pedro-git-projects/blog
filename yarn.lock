@@ -982,7 +982,7 @@
   dependencies:
     "@contentful/rich-text-types" "^14.1.2"
 
-"@contentful/rich-text-types@^14.1.2":
+"@contentful/rich-text-types@^14.1.1", "@contentful/rich-text-types@^14.1.2":
   version "14.1.2"
   resolved "https://registry.yarnpkg.com/@contentful/rich-text-types/-/rich-text-types-14.1.2.tgz#33162fdbf427891122a96030f806ca9a9cf0e844"
   integrity sha512-XbgZ7op5uyYYszipgQg/bYobF4b+llXyTwS8hISRniQY9xKESz544eP2OGmRc4J3MHx29M7Vmx7TVA/IK65giQ==
@@ -3852,7 +3852,7 @@ contentful-sdk-core@^6.4.0, contentful-sdk-core@^6.5.0:
     fast-copy "^2.1.0"
     qs "^6.9.4"
 
-contentful@^7.14.12:
+contentful@^7.14.8:
   version "7.15.2"
   resolved "https://registry.yarnpkg.com/contentful/-/contentful-7.15.2.tgz#caa54e6c5e53f840949f2fef455dc9f52d969b88"
   integrity sha512-hu+hq0mi7mR7TEKdDg+WyId25Oe4lgNi5WsrPKPlCNBKDQ0QOZly8Vyq/9LF2hR4cbn9tTnRWElIU9Q+JNgP7Q==
@@ -6141,7 +6141,7 @@ gatsby-cli@^2.16.1:
     yoga-layout-prebuilt "^1.9.6"
     yurnalist "^1.1.2"
 
-gatsby-core-utils@^1.7.0:
+gatsby-core-utils@^1.3.23, gatsby-core-utils@^1.7.0:
   version "1.7.0"
   resolved "https://registry.yarnpkg.com/gatsby-core-utils/-/gatsby-core-utils-1.7.0.tgz#fb5b5181136b48b859b57e3a2adc84852e79b0ec"
   integrity sha512-DYYkmlgpfkQBuc/vWEkSmp1xh7LGI00HA0AzH2U8AblrqAff3JBezeS3v8thkeuOm7FhlwkZGPNza+PIHYcwKA==
@@ -6251,6 +6251,13 @@ gatsby-plugin-typescript@^2.9.0:
     "@babel/runtime" "^7.12.5"
     babel-plugin-remove-graphql-queries "^2.13.0"
 
+gatsby-plugin-utils@^0.2.40:
+  version "0.2.40"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-utils/-/gatsby-plugin-utils-0.2.40.tgz#20e997d10efb9a0368270f79ce2e6001346f6336"
+  integrity sha512-RKjmpPhmi8TDR9hAKxmD4ZJMje3BLs6nt6mxMWT0F8gf5giCYEywplJikyCvaPfuyaFlq1hMmFaVvzmeZNussg==
+  dependencies:
+    joi "^17.2.1"
+
 gatsby-plugin-utils@^0.6.0:
   version "0.6.0"
   resolved "https://registry.yarnpkg.com/gatsby-plugin-utils/-/gatsby-plugin-utils-0.6.0.tgz#ec40fe484e1a46e81175adbf9cc4d6eee9c5dd35"
@@ -6357,24 +6364,23 @@ gatsby-remark-relative-images@^2.0.2:
     traverse "0.6.6"
     unist-util-select "3.0.1"
 
-gatsby-source-contentful@^4.3.0:
-  version "4.3.0"
-  resolved "https://registry.yarnpkg.com/gatsby-source-contentful/-/gatsby-source-contentful-4.3.0.tgz#e1b06be46f3e8f5c453e051d736d116ff2dcccc0"
-  integrity sha512-3CmB3RNyiqJma0ZuKPiY3u6kgWafbNlCBMpMrNfVJtj4oQ9EMB5C0c8+fCWusj+jAMNipp/ljAWq6GpjpD9RDw==
+gatsby-source-contentful@3.0.7:
+  version "3.0.7"
+  resolved "https://registry.yarnpkg.com/gatsby-source-contentful/-/gatsby-source-contentful-3.0.7.tgz#66e46605bae591f90edf47b1fe5d9a107d3296a3"
+  integrity sha512-22Qa1l9lAzEgjN26T6p4UGEkOrOVOreW9hZV9dgRgQJ/XalZnUSmWMRb2/L863S9KwtPPpOBrxwbTVOVq0fb9w==
   dependencies:
-    "@babel/runtime" "^7.12.5"
-    "@contentful/rich-text-react-renderer" "^14.1.2"
-    "@contentful/rich-text-types" "^14.1.2"
+    "@babel/runtime" "^7.11.2"
+    "@contentful/rich-text-types" "^14.1.1"
     "@hapi/joi" "^15.1.1"
     axios "^0.21.0"
     base64-img "^1.0.4"
     bluebird "^3.7.2"
     chalk "^4.1.0"
-    contentful "^7.14.12"
+    contentful "^7.14.8"
     fs-extra "^9.0.1"
-    gatsby-core-utils "^1.7.0"
-    gatsby-plugin-utils "^0.6.0"
-    gatsby-source-filesystem "^2.8.0"
+    gatsby-core-utils "^1.3.23"
+    gatsby-plugin-utils "^0.2.40"
+    gatsby-source-filesystem "^2.3.37"
     is-online "^8.5.1"
     json-stringify-safe "^5.0.1"
     lodash "^4.17.20"
@@ -6382,7 +6388,7 @@ gatsby-source-contentful@^4.3.0:
     progress "^2.0.3"
     qs "^6.9.4"
 
-gatsby-source-filesystem@^2.8.0:
+gatsby-source-filesystem@^2.3.37, gatsby-source-filesystem@^2.8.0:
   version "2.8.0"
   resolved "https://registry.yarnpkg.com/gatsby-source-filesystem/-/gatsby-source-filesystem-2.8.0.tgz#72bd65eda0b49aa27c618d9a1eb86e1c1df5d943"
   integrity sha512-wZXwL/B+PvgSAi4Fkrw33yBk6FdDoz6g2mRfS6NxVVQotbA2oNe+jFc+IL0j9/cUMTItP3rW+8V8U9ufASQfAw==
