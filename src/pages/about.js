@@ -7,7 +7,8 @@ const AboutPage = () => {
   return (
     <Layout>
       <Head title="About"/>
-      <h1>About</h1>
+      
+      <h1>About</h1>     
       <p>, sit amet consectetur adipisicing elit. Recusandae nesciunt, exercitationem reiciendis culpa error iste dolore hic vel inventore. Similique.</p>      
       <Link to="/contact">Contact me.</Link>
     </Layout>
