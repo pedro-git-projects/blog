@@ -1,6 +1,13 @@
 .header{
-    padding: 1rem 0 3rem;
+    position: relative;
+    padding: 1rem 0 4rem;
+    background: #13121b;
 }
+
+.header img {
+    float: left;
+    padding-bottom: 1rem;
+  }
 
 .title{
     color: #000000;
@@ -16,7 +23,7 @@
 }
 
 .nav-item {
-    color: #999999;
+    color: #ffffff;
     font-size: .9rem;
     margin-right: 1.3rem;
     text-decoration: none;
@@ -26,12 +33,14 @@
     display: flex;
     list-style-type: none;
     margin: 0;
+    padding-top: 0.9rem;
+    float: right;
 }
 
 .nav-item:hover{
-    color: #666666;
+    color:  #c0b5ee;
 }
 
 .active-nav-item{
-    color: #333333;
+    color:  #ab9bec;
 }
