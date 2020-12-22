@@ -632,21 +632,3 @@ html {
     color: black;
     background: #c0b5ee;
   }
-
-  body::-webkit-scrollbar {
-  width: 1em;
-}
- 
-body::-webkit-scrollbar-track {
-  box-shadow: inset 0 0 6px rgb(125, 115, 181);
-}
- 
-body::-webkit-scrollbar-thumb {
-  background-color: #19191f;
-  outline: 1px solid slategrey;
-}
-
-*  {
-  scrollbar-width: thin;          /* "auto" or "thin" */
-  scrollbar-color:#c0b5ee#19191f;   /* scroll thumb and track */
-}
